@@ -44,7 +44,7 @@ describe('Cadastro de usuário', () => {
       cadastro_pages.validarMensagemErro('O campo senha deve ter pelo menos 6 dígitos')
     })
 
-    it.only('Cadastro feito com sucesso', async () => {
+    it('Cadastro feito com sucesso', async () => {
 
       const name = await faker.person.fullName()
       const email = await faker.internet.email()
