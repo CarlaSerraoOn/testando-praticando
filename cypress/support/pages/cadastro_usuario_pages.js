@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-import { Faker } from "@faker-js/faker"
-
 export default {
     clicarCadastrar() {
         cy.get('#btnRegister')
@@ -25,7 +23,26 @@ export default {
     preencheNome(nome) {
         cy.get('#user')
             .type(nome)
+    },
 
+    preencheEmail(email) {
+        cy.get('#email')
+            .type(email)
+    },
 
+    preencheSenha(senha) {
+        cy.get('#password')
+            .type(senha)
+    },
+
+    validarMensagemSucesso(nome) {
+        cy.get('#swal2-title')
+            .should('be.visible')
+            .should('have.text', 'Cadastro realizado!')
+
+            cy.get('#swal2-html-container')
+            .should('be.visible')
+            .should('have.text', `Bem-vindo ${nome}`)
     }
+
 }
