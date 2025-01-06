@@ -19,4 +19,4 @@ vendor/
 config.local.json
 
 # recriação de pasta em loop
-screenshots
+cypress/screenshots
