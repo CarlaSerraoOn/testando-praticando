@@ -26,7 +26,7 @@ export default {
     },
 
     preencheEmail(email) {
-        cy.get('#email')
+        cy.get('#user')
             .type(email)
     },
 
