@@ -17,3 +17,6 @@ vendor/
 # Ignorar arquivos de configuração locais
 .env
 config.local.json
+
+# recriação de pasta em loop
+screenshots
